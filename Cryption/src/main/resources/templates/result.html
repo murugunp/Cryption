@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Encrypt & Decrypt Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Encrypt & Decrypt multiline string</h1>
+    
+<!-- <p th:utext="${#strings.replace( #strings.escapeXml( text ),T(java.lang.System).getProperty('line.separator'),'&lt;br /&gt;')}" ></p> -->
+        <textarea th:field="${content.text}"></textarea>
+        <a href="/cryption">Go Back</a>
+
+</body>
+</html>
